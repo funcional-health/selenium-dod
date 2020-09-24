@@ -1,6 +1,8 @@
 package pageobject.login;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+
 import base.testbase.TestBase;
 
 public class LoginPO extends TestBase {
@@ -30,9 +32,15 @@ public class LoginPO extends TestBase {
 	/*public void submitSenha() {
 	submitInput(txtSenha, "Senha");}*/
 
-	By pnAviso = By.id("swal2-content");
-	public void VerifyTextPnAviso(String text) {
-	verifyByElementText(pnAviso, "Aviso", text);}
+	
+	
+	public void verifyCharacterAccepted(String elemento_id , String nomecampo) {
+		By elementoid = By.id(elemento_id);
+		setText(elementoid, nomecampo , "ABC");
+	    verifyByElementAttribute(elementoid, "value", nomecampo, "");
+	    //verifyByElementText(elementoid, nomecampo, "");
+		//verifyByElementText(elementoid, "campo testado", "");
+		}
 	
 	
 }

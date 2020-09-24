@@ -1,7 +1,5 @@
 package testcase.login;
 
-import java.util.ArrayList;
-import java.util.Iterator;
 
 import pageobject.login.LoginPO;
 
@@ -21,26 +19,30 @@ public class LoginTC {
 			String idtEntrar,
 			String senha,
 			String url,
-			ArrayList<Object> elementos) {
+			String nomecampo,
+			String elemento_id,
+    		String tipodado,
+			String rn_obrigatoriedade,
+			String msg_obrigatoriedade) {
 
 		loginPO.setTxtUsuario(idtLogin,usuario);
 		loginPO.setTxtSenha(idtSenha,senha);
 		loginPO.entrar(idtEntrar);
 		loginPO.Navegando(url);
-		//loginPO.submitSenha();
-		Iterator<Object> iter =  elementos.iterator();
-		while (iter.hasNext()){
-			Object elemento = iter.next();
-			System.out.println(elemento);
-		/*	switch(elemento.tipodado) {
-				
-				"campointeiro":
-					System.println(elemento.tipodados);
-				break;*/
-			
-				
+		//System.out.println(tipodado);
+		switch(tipodado){
+			case "numerico":
+				loginPO.verifyCharacterAccepted(elemento_id,nomecampo);
+				break;
 		}
-	}
-	
-
+				
+		
+		/*Iterator<String> keys = elementos.
+		for ( Iterator<String> Keys = elementos.keys(); Keys.hasNext(); ) {
+		    System.out.println( elementos.get( Keys.next() ).toString() );
+		}*/
+		//Iterator<Object> iter =  elementos.iterator();
+		//
+		}
 }
+	

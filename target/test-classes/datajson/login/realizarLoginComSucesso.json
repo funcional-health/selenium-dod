@@ -7,24 +7,26 @@
 			"idtSenha" : "LoginForm_password",
 			"idtEntrar" : "BtnEnviar",
 			"senha": "q1w2e3r4t5",
-			"url" : "http://10.13.0.2/index.php?r=transferorder/operadorMaster/update&id=3",
-			"elementos":[
-							{
-									"id":"",
-									"tipodado":"inteiro",
-									"regraNegocio":{
-													"obrigatoriedade":"true",
-													"mensagemobrigatoriedade":""
-												   },
-									"regrasnaofuncionais":{
-									                       "naoaceitarcaracter":""
-									                       }							
-								}
-								
-							
-						]
-			}
-		
-		
+			"url" : "http://10.13.0.2/index.php?r=transferorder/operadorMaster/create",
+			"nomecampo":"Período de Corte",
+			"elemento_id":"OperadorMaster_periodo_corte_dias",
+			"tipodado":"numerico",
+			"rn_obrigatoriedade":"false",
+			"msg_obrigatoriedade":"sem mensagem"					
+		},
+		{	
+			"idtLogin" : "LoginForm_username",
+			"usuario": "fidmaster",
+			"idtSenha" : "LoginForm_password",
+			"idtEntrar" : "BtnEnviar",
+			"senha": "q1w2e3r4t5",
+			"url" : "http://10.13.0.2/index.php?r=cadastro/cadProduto/create",
+			"nomecampo":"EAN",
+			"elemento_id":"CadProduto_cod_ean",
+			"tipodado":"numerico",
+			"rn_obrigatoriedade":"false",
+			"msg_obrigatoriedade":"sem mensagem"					
+		}
+					
 	]
 }

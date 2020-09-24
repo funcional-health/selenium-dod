@@ -9,10 +9,11 @@ import base.dataproviderbase.JsonReader;
 public class LoginDP {
 
 	@DataProvider(name = "realizarLoginComSucesso")
-
+	
 	public static Object[][] realizarLoginComSucesso() throws IOException {
-
-		return JsonReader.getdata("src/test/java/datajson/login/realizarLoginComSucesso.json", "realizarLoginComSucesso");
+		/* Object[][] ob = JsonReader.getdata("src/test/java/datajson/login/realizarLoginComSucesso.json", "realizarLoginComSucesso");
+		 System.out.println(ob);*/
+		 return JsonReader.getdata("src/test/java/datajson/login/realizarLoginComSucesso.json", "realizarLoginComSucesso");
 	}
 
 }
