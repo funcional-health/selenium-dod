@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="1" name="Execution - Chrome" parallel="none">
 
-	<parameter name="productName" value="TradeTools" />
+	<parameter name="productName" value="DOD" />
 	<parameter name="systemUrl" value="http://10.13.0.2/" />
 
 	<!-- Environment information -->

@@ -1,6 +1,7 @@
 package execution.login;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import org.testng.annotations.Test;
 
@@ -21,10 +22,14 @@ public class Login extends Hooks {
     		String idtSenha, 
     		String senha,
     		String idtEntrar,
-    		String url) throws IOException{
+    		String url,
+    		ArrayList<Object> elementos
+    		) throws IOException{
 
+    	
 		 loginTC = new LoginTC();
-		 loginTC.realizarLoginComSucesso(usuario, idtLogin, idtSenha, senha, idtEntrar, url);		 
+		 loginTC.realizarLoginComSucesso(usuario, idtLogin, idtSenha, senha, idtEntrar, url, elementos);	
+		 
 	     
     }
 }
