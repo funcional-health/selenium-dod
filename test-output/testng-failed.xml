@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="none" name="Failed suite [Execution - Chrome]">
+  <parameter name="dimensionHeight" value="1080"/>
+  <parameter name="driverPath" value=""/>
+  <parameter name="dimensionWidth" value="1920"/>
+  <parameter name="systemUrl" value="http://10.13.0.2/"/>
+  <parameter name="buildNumber" value=""/>
+  <parameter name="productName" value="TradeTools"/>
+  <parameter name="environmentExecution" value="LOCAL"/>
+  <parameter name="reportStrategy" value="SUITE"/>
+  <parameter name="enableVNC" value="true"/>
+  <parameter name="browser" value="CHROME"/>
+  <parameter name="browserVersion" value="80.0"/>
+  <parameter name="remoteURL" value="http://10.13.0.10:4444/wd/hub"/>
+  <parameter name="printAllSteps" value="false"/>
+  <parameter name="klovServerIP" value=""/>
+  <test parallel="none" name="CadastrarCiclo(failed)">
+    <classes>
+      <class name="execution.login.Login">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+          <include name="closeBrowser"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="realizarLoginComSucesso" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- execution.login.Login -->
+    </classes>
+  </test> <!-- CadastrarCiclo(failed) -->
+</suite> <!-- Failed suite [Execution - Chrome] -->

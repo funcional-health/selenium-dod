@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Execution - Chrome" parallel="none">
+
+	<parameter name="productName" value="TradeTools" />
+	<parameter name="systemUrl" value="http://10.13.0.2/" />
+
+	<!-- Environment information -->
+	<parameter name="environmentExecution" value="LOCAL" /> <!-- LOCAL - REMOTE -->
+	<parameter name="browser" value="CHROME" /> <!-- CHROME -->
+	<parameter name="dimensionWidth" value="1920" /> <!-- Default value=""1280 -->
+	<parameter name="dimensionHeight" value="1080" /> <!-- Default value=""1024 -->
+
+	<!-- Environment local information -->
+	<parameter name="driverPath" value="" />
+
+	<!-- Environment remote information -->
+	<parameter name="remoteURL"
+		value="http://10.13.0.10:4444/wd/hub" /> <!-- http://10.13.0.10:4444/wd/hub -->
+	<parameter name="browserVersion" value="80.0" />
+	<parameter name="enableVNC" value="true" />
+
+	<!-- Report information -->
+	<parameter name="reportStrategy" value="SUITE" />
+	<parameter name="printAllSteps" value="false" />
+	<parameter name="klovServerIP" value="" /> <!-- Default value=""172.30.0.43 -->
+	<parameter name="buildNumber" value="" /> <!-- Default value="" -->
+
+
+ 	<test name="Login">
+		<classes>
+			<class name="execution.login.Login" />
+		</classes>
+	</test>  
+</suite> 

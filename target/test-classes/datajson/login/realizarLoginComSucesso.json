@@ -1,0 +1,13 @@
+{
+	"realizarLoginComSucesso": 
+	[
+		{	
+			"idtLogin" : "LoginForm_username",
+			"usuario": "fidmaster",
+			"idtSenha" : "LoginForm_password",
+			"idtEntrar" : "BtnEnviar",
+			"senha": "q1w2e3r4t5",
+			"url" : "http://10.13.0.2/index.php?r=transferorder/operadorMaster/update&id=3"
+		}
+	]
+}

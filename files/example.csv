@@ -1,0 +1,2 @@
+Descrição;CNPJ da Matriz;Razão Social;Endereço;Cidade;UF;CEP;Diretório
+É o campo descrição no cadastro da bandeira. Deve ser inserido sem caracteres especiais;Campo exclusivamente numérico;Deve ser inserido sem caracteres especiais;Deve conter inclusive numeração do endereço;Deve conter o nome da cidade;Deve conter a sigla da Unidade Federativa;Deve conter 8 dígitos sem caracteres especiais;Deve conter o nome do diretório utilizado pela bandeira
